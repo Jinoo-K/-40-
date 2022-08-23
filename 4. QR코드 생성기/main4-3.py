@@ -1,3 +1,5 @@
+# pip install qrcode
+
 import qrcode
 
 file_path = r'4. QR코드 생성기\qr코드모음.txt'
@@ -8,7 +10,7 @@ with open(file_path, "rt", encoding="UTF8") as f :
         line = line.strip()
         print(line)
         
-        qr_data = line
+        qr_data = line      # 읽어온 데이터로 qr코드 생성 및 저장
         qr_img = qrcode.make(qr_data)
         
         save_path = "4. QR코드 생성기\\" + qr_data + '.png'
