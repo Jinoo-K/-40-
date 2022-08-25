@@ -10,10 +10,10 @@ cpu_core = psutil.cpu_count(logical=False)
 print(f"코어 : {cpu_core} 개")
 
 memory = psutil.virtual_memory()
-memory_total = round(memory.total / 1024**3)
+memory_total = round(memory.total / 1024**3)        # 1024^3
 print(f"메모리 : {memory_total} GB")
 
-disk = psutil.disk_partitions()
+disk = psutil.disk_partitions()     # 디스크 정보 출력, 파티션 포함
 for p in disk :
     print(p.mountpoint, p.fstype, end=" ")
     du = psutil.disk_usage(p.mountpoint)
