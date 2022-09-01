@@ -2,7 +2,7 @@
 # pip install python-docx
 # pip install docx2pdf
 
-import pandas as pd
+import pandas as pd     # pandas는 데이터 등을 다루는 유명한 라이브러리임
 
 df = pd.DataFrame([["김진우", "1991.01.23", "2022-0001"],
                    ["홍길동", "1991.10.30", "2022-0002"],

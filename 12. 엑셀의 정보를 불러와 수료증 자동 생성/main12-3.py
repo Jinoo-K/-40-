@@ -13,7 +13,7 @@ style.font.name = "나눔고딕"
 style._element.rPr.rFonts.set(qn("w:eastAsia"), "나눔고딕")
 style.font.size = docx.shared.Pt(12)
 
-para = doc.add_paragraph()
+para = doc.add_paragraph()      # 문단 생성, 글씨 입력 및 설정
 run = para.add_run("\n\n")
 run = para.add_run(" 제 2022-0001 호\n")
 run.font.name = "나눔고딕"

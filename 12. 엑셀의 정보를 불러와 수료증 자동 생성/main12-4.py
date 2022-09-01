@@ -7,7 +7,7 @@ from openpyxl import load_workbook
 import docx
 from docx.oxml.ns import qn
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx2pdf import convert
+from docx2pdf import convert        # pdf로 변환하기 위한 라이브러리
 
 load_wb = load_workbook(r"12. 엑셀의 정보를 불러와 수료증 자동 생성\수료증명단.xlsx")
 load_ws = load_wb.active
