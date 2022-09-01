@@ -11,7 +11,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def send_message():
-    threading.Timer(10, send_message).start()
+    threading.Timer(10, send_message).start()       # 10초 후에 함수 실행
     
     picPosition = pyautogui.locateOnScreen("pic1.png")
     print(picPosition)

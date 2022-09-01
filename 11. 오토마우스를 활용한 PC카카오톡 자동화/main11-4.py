@@ -5,7 +5,6 @@
 import pyautogui
 import pyperclip
 import time
-import threading
 import os
 import schedule
 
@@ -35,7 +34,7 @@ def send_message():
     pyautogui.write(["Escape"])
     time.sleep(1.0)
 
-schedule.every(10).seconds.do(send_message)
+schedule.every(10).seconds.do(send_message)     # 10초마다 함수 실행
 
 while True:
     schedule.run_pending()

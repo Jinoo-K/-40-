@@ -19,7 +19,7 @@ if picPosition is None :
     picPosition = pyautogui.locateOnScreen("pic3.png")
     print(picPosition)
     
-clickPosition = pyautogui.center(picPosition)
+clickPosition = pyautogui.center(picPosition)       # 찾은 이미지의 중간 좌표값을 계산하여 이동
 pyautogui.doubleClick(clickPosition)
 
 pyperclip.copy("이 메세지는 자동으로 보내는 메세지입니다!!!")
