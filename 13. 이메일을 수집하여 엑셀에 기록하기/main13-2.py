@@ -13,6 +13,6 @@ no.kr
 
 results = re.findall(r"[\w\.-]+@[\w\.-]+", test_string)
 
-results = list(set(results))
+results = list(set(results))        # set 사용, 중복 제거
 
 print(results)
