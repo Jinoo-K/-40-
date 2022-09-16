@@ -15,7 +15,7 @@ road_type = 'ROAD'
 road_type2 = 'PARCEL'
 address = '&address='
 keys = '&key='
-primary_key = 'B97ACFCB-C0E3-3742-98A2-07F5E8FE1770'
+primary_key = ''
 
 def request_geo(road):
     page = requests.get(url+params+road_type+address+road+keys+primary_key)
@@ -46,3 +46,4 @@ for num, value in enumerate(address_list) :
     sheet.append([university_list[num], addr, x, y])
     
 wb.save(r"27. 전국의 대학교 위치 시각화하기\학교주소좌표.xlsx")
+
