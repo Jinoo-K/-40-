@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")     # 얼굴과 눈을 찾기 위한 OpenCV 알고리즘 적용된 파일 불러오기
 eye_casecade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_eye.xml")
 
 ff = np.fromfile(r"23. 사진에 얼굴만 찾아 모자이크처리(OpenCV)\샘플사진.jpg", np.uint8)

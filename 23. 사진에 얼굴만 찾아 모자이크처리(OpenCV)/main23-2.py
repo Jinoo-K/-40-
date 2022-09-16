@@ -13,7 +13,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.2, 5)
 for (x, y, w, h) in faces :
     face_img = img[y:y+h, x:x+w]
-    face_img = cv2.resize(face_img, dsize=(0, 0), fx=0.05, fy=0.05)
+    face_img = cv2.resize(face_img, dsize=(0, 0), fx=0.05, fy=0.05)     # 모자이크 크기 수정
     face_img = cv2.resize(face_img, (w, h), interpolation=cv2.INTER_AREA)
     img[y:y+h, x:x+w] = face_img
         
