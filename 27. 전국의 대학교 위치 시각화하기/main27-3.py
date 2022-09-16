@@ -46,3 +46,4 @@ for num, value in enumerate(address_list) :
     sheet.append([university_list[num], addr, x, y])
     
 wb.save(r"27. 전국의 대학교 위치 시각화하기\학교주소좌표.xlsx")
+
