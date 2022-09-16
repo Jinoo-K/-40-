@@ -10,7 +10,7 @@ def onChange(pos):
 
 cv2.namedWindow("Trackbar Windows")
 
-cv2.createTrackbar("sigma_s", "Trackbar Windows", 0, 200, onChange)
+cv2.createTrackbar("sigma_s", "Trackbar Windows", 0, 200, onChange)     # 최소값, 최대값 설정
 cv2.createTrackbar("sigma_r", "Trackbar Windows", 0, 100, onChange)
 
 cv2.setTrackbarPos("sigma_s", "Trackbar Windows", 100)
@@ -27,7 +27,7 @@ while True :
     print("sigma_s_value:", sigma_s_value)
     print("sigma_r_value:", sigma_r_value)
     
-    cartoon_img = cv2.stylization(img, sigma_s=sigma_s_value, sigma_r=sigma_r_value)
+    cartoon_img = cv2.stylization(img, sigma_s=sigma_s_value, sigma_r=sigma_r_value)        # 트랙의 포지션 위치에 따라 그림화 조절
     
     cv2.imshow("Trackbar Windows", cartoon_img)
 
